@@ -81,7 +81,15 @@ const Ipod = (props) => {
                     return;
                 }}>
                     <div className="display-container" style={themeDisplayContainer()}>
-                        <Display />
+                        <Display 
+                            menu={menu}
+                            screen={screen}
+                            songsList={songsList}
+                            theme={theme}
+                            progressRef={progressRef}
+
+                            updateProgress={updateProgress}
+                        />
                     </div>
             </div>
             <div className="bottom-container"
