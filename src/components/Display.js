@@ -24,7 +24,12 @@ const Display = () => {
         >
             {/* screenIndex === 7 is images.allsongs from this.state.screen ojects wallpaper */}
             {screenIndex === 7 && (
-                <Allsongs />
+                <Allsongs 
+                    songsList={songsList}
+                    progressRef={progressRef}
+
+                    updateProgress={updateProgress}
+                />
             )}
             {screenIndex !== 7 && (
                 <img src={wallpaper[screenIndex]}
@@ -39,7 +44,7 @@ const Display = () => {
                 />
             )}
 
-            <Menu />
+            <Menu menu={menu} />
         </div>
     )
 }
