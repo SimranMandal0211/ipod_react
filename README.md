@@ -11,7 +11,7 @@ This is a Mini Ipod App Project which is built using React, CSS, Javascript. It 
 - Users should be able to toggle between the themes in settings: Classic & Dark.
 - Users should be able to change the wallpaper of the app in the settings.
 
-**Feature**
+****Feature****
 
 - Main Menu - Settings, Music, Coverflow, Games,
 - Settings Menu
@@ -55,13 +55,22 @@ This is a Mini Ipod App Project which is built using React, CSS, Javascript. It 
   ---------mension links here - web page and youtube link-------------
 
 # 💻 Screens
+![1](https://github.com/SimranMandal0211/ipod_react/assets/114256507/d5c3e099-79b2-4a50-8d79-ebd1c3ded161)
+
+![2](https://github.com/SimranMandal0211/ipod_react/assets/114256507/6d5b9c29-a242-4120-9267-eae532ffd604)
+
+![3](https://github.com/SimranMandal0211/ipod_react/assets/114256507/2fe6dca6-6e49-400d-a846-6c2731727b9e)
+
+![4](https://github.com/SimranMandal0211/ipod_react/assets/114256507/0bd344e9-19a2-4325-a97a-0e96a3e3997c)
+
+![5](https://github.com/SimranMandal0211/ipod_react/assets/114256507/65754582-dce6-41a9-854d-83949f77b257)
 
 
 # 🐦 Follow Me:
   LinkedIn
   YouTube
 
-I hope you like the project. THanks for reading:)
+I hope you like the project. Thanks for reading:)
 
   
 # Getting Started with Create React App
