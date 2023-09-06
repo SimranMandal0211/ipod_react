@@ -94,7 +94,23 @@ const Ipod = (props) => {
             </div>
             <div className="bottom-container"
                 style={themeBottomContainer()}>
-                    <Controller />
+                    <Controller 
+                        menu={menu}
+                        mouse={mouse}
+                        screen={screen}
+                        songsList={songsList}
+                        theme={theme}
+                        controllerRef={controllerRef}
+
+                        isMenuVisible={isMenuVisible}
+                        addClass={addClass}
+                        removeClass={removeClass}
+                        tap={tap}
+                        rotate={rotate}
+                        play={play}
+                        nextSong={nextSong}
+                        prevSong={prevSong}
+                    />
             </div>
         </div>
     )
