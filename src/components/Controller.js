@@ -1,6 +1,6 @@
 import React from "react";
 
-const Controller = () => {
+const Controller = (props) => {
     const {
 		menu,
 		mouse,

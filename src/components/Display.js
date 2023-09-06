@@ -2,7 +2,7 @@ import React from "react";
 import Menu from './Menu';
 import Allsongs from './Allsongs';
 
-const Display = () => {
+const Display = (props) => {
 
     const { menu, screen, songsList, updateProgress, progressRef, theme } =
 		props;
