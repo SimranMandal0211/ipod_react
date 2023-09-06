@@ -122,7 +122,7 @@ const styles = {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		textShadow: "1px 2px 0px lightgray",
+		textShadow: "1px 2px 0px cyan",
 		borderRadiusTopLeft: "10%",
 
 	},
@@ -131,7 +131,7 @@ const styles = {
 		textTransform: "capitalize",
 	},
 	menu: {
-		backgroundColor: "#336d62",
+		backgroundColor: "rgb(187, 200, 200)",
 		borderRadiusTopLeft: "10%",
 	},
 };

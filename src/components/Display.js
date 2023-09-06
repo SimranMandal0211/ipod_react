@@ -37,8 +37,7 @@ const Display = (props) => {
                     style={{
 						height: "100%",
 						width: "100%",
-						borderTopLeftRadius: "10%",
-						borderTopRightRadius: "10%",
+						borderRadius: "10%",
 						zIndex: 2,
 					}}
                 />
