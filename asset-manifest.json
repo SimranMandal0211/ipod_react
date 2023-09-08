@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ipod_react/static/css/main.5240453d.css",
+    "main.js": "/ipod_react/static/js/main.404418b8.js",
+    "static/media/yummy.mp3": "/ipod_react/static/media/yummy.4bd6ed59af6c9a878b76.mp3",
+    "static/media/stay.mp3": "/ipod_react/static/media/stay.c66de23e4e56a65f7748.mp3",
+    "static/media/senorita.mp3": "/ipod_react/static/media/senorita.d947f014c0d0a09a637a.mp3",
+    "static/media/allsongs.gif": "/ipod_react/static/media/allsongs.9d80c8e94b0622c75dc1.gif",
+    "static/media/wallpaper2.jpg": "/ipod_react/static/media/wallpaper2.e443ca9b67720a9c32b4.jpg",
+    "static/media/artists.webp": "/ipod_react/static/media/artists.d6c6ccfdc05c926df8e5.webp",
+    "static/media/yummy.jpg": "/ipod_react/static/media/yummy.f85dd9e1c014e9471c5f.jpg",
+    "static/media/senorita.jpg": "/ipod_react/static/media/senorita.9cfc85a3cd84c98f6a27.jpg",
+    "static/media/coverflow.png": "/ipod_react/static/media/coverflow.a9130ea0cdda18cf6216.png",
+    "static/media/stay.jpg": "/ipod_react/static/media/stay.e847d56aa50a2636cf4d.jpg",
+    "static/media/wallpaper1.jpg": "/ipod_react/static/media/wallpaper1.5708c19be9f2fdac4413.jpg",
+    "static/media/wallpaper5.jpg": "/ipod_react/static/media/wallpaper5.3dba843fd1de2206cb03.jpg",
+    "static/media/wallpaper3.jpg": "/ipod_react/static/media/wallpaper3.1520d4cabd51dffa7cd4.jpg",
+    "static/media/albums.jpg": "/ipod_react/static/media/albums.227b34086a1ef8c3629e.jpg",
+    "static/media/wallpaper4.jpg": "/ipod_react/static/media/wallpaper4.e3a152d0a8ee518de7da.jpg",
+    "index.html": "/ipod_react/index.html",
+    "main.5240453d.css.map": "/ipod_react/static/css/main.5240453d.css.map",
+    "main.404418b8.js.map": "/ipod_react/static/js/main.404418b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5240453d.css",
+    "static/js/main.404418b8.js"
+  ]
+}
