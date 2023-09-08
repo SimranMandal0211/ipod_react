@@ -4,8 +4,8 @@ import artists from '../images/artists.webp';
 import coverflow from '../images/coverflow.png';
 import games from '../images/games.jpg';
 
-import song1Img from '../images/senorita.jpg';
-import song2Img from '../images/stay.jpg';
+import song1Img from '../images/stay.jpg';
+import song2Img from '../images/senorita.jpg';
 import song3Img from '../images/yummy.jpg';
 
 import wallpaper1 from '../images/wallpaper1.jpg';
