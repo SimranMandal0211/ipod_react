@@ -4,8 +4,7 @@ import Allsongs from './Allsongs';
 
 const Display = (props) => {
 
-    const { menu, screen, songsList, updateProgress, progressRef, theme } =
-		props;
+    const { menu, screen, songsList, updateProgress, progressRef, theme } = props;
 	const { wallpaper, screenIndex } = screen;
 
     // Changing the ipod display theme color

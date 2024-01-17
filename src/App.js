@@ -125,8 +125,7 @@ class App extends React.Component{
       if( menu.menuVisible === 'yes' && menu.musicVisible === 'no' && menu.settingsVisible === 'no'){
           menu.menuVisible = 'no';
         }
-      else if( menu.menuVisible === 'yes' && menu.musicVisible === 'yes' && menu.settingsVisible === 'no'
-      ){
+      else if( menu.menuVisible === 'yes' && menu.musicVisible === 'yes' && menu.settingsVisible === 'no'){
         menu.musicVisible = 'no';
       }
       else if( menu.menuVisible === 'yes' && menu.musicVisible === 'no' && menu.settingsVisible === 'yes'){
@@ -165,69 +164,61 @@ class App extends React.Component{
     // To go to the sub menu of the main menu
     if( menu.menuVisible === 'yes' && menu.musicVisible === 'no' && menu.settingsVisible === 'no'){
       if (menu.optionsIndex === 0) {
-				menu.musicVisible = "yes";
-			} else if (menu.optionsIndex === 1) {
-				menu.pageRender = "yes";
-				menu.menuVisible = "no";
-				screen.screenIndex = 6;
-			} else if (menu.optionsIndex === 2) {
-				menu.pageRender = "yes";
-				menu.menuVisible = "no";
-				screen.screenIndex = 5;
-			} else {
-				menu.settingsVisible = "yes";
-			}
+			menu.musicVisible = "yes";
+		} else if (menu.optionsIndex === 1) {
+			menu.pageRender = "yes";
+			menu.menuVisible = "no";
+			screen.screenIndex = 6;
+		} else if (menu.optionsIndex === 2) {
+			menu.pageRender = "yes";
+			menu.menuVisible = "no";
+			screen.screenIndex = 5;
+		} else {
+			menu.settingsVisible = "yes";
+		}
     }
     // To open the pages of music menu
-    else if (
-			menu.menuVisible === "yes" &&
-			menu.musicVisible === "yes" &&
-			menu.settingsVisible === "no"
-		) {
-			if (menu.musicIndex === 0) {
-				menu.pageRender = "yes";
-				menu.menuVisible = "no";
-				screen.screenIndex = 7;
-				songsList.isPlaying = true;
-				songsList.songs[songsList.songIndex].play();
-			} else if (menu.musicIndex === 1) {
-				menu.pageRender = "yes";
-				menu.menuVisible = "no";
-				screen.screenIndex = 8;
-			} else {
-				menu.pageRender = "yes";
-				menu.menuVisible = "no";
-				screen.screenIndex = 9;
-			}
-		}
-    // to open the pages of settings menu
-    else if (
-			menu.menuVisible === "yes" &&
-			menu.musicVisible === "no" &&
-			menu.settingsVisible === "yes"
-		) {
-			if (menu.settingsIndex === 0) {
-				if (screen.wallpaperIndex < 4) {
-					screen.wallpaperIndex += 1;
-				} else {
-					screen.wallpaperIndex = 0;
-				}
-				screen.screenIndex = screen.wallpaperIndex;
-			}
-			// For changing the Orientation
-			else if (menu.settingsIndex === 1) {
-				alert("Error");
-			}
-			// For changing the Theme
-			else {
-				if (theme.themeIndex === 0) {
-					theme.themeIndex = 1;
-				} else {
-					theme.themeIndex = 0;
-				}
-			}
+    else if ( menu.menuVisible === "yes" && menu.musicVisible === "yes" && menu.settingsVisible === "no"){
+		if (menu.musicIndex === 0) {
+			menu.pageRender = "yes";
+			menu.menuVisible = "no";
+			screen.screenIndex = 7;
+			songsList.isPlaying = true;
+			songsList.songs[songsList.songIndex].play();
+		} else if (menu.musicIndex === 1) {
+			menu.pageRender = "yes";
+			menu.menuVisible = "no";
+			screen.screenIndex = 8;
 		} else {
+			menu.pageRender = "yes";
+			menu.menuVisible = "no";
+			screen.screenIndex = 9;
 		}
+	}
+    // to open the pages of settings menu
+    else if ( menu.menuVisible === "yes" && menu.musicVisible === "no" && menu.settingsVisible === "yes"){
+		if (menu.settingsIndex === 0) {
+			if (screen.wallpaperIndex < 4) {
+				screen.wallpaperIndex += 1;
+			} else {
+				screen.wallpaperIndex = 0;
+			}
+			screen.screenIndex = screen.wallpaperIndex;
+		}
+		// For changing the Orientation
+		else if (menu.settingsIndex === 1) {
+			alert("Error");
+		}
+		// For changing the Theme
+		else {
+			if (theme.themeIndex === 0) {
+				theme.themeIndex = 1;
+			} else {
+				theme.themeIndex = 0;
+			}
+		}
+	} else {
+	}
     this.setState({ menu, screen, songsList, theme });
 		return;
   };
@@ -242,11 +233,7 @@ class App extends React.Component{
 			(event) => {
 				event.stopPropagation();
 				// Rotation in Main Menu
-				if (
-					menu.menuVisible === "yes" &&
-					menu.musicVisible === "no" &&
-					menu.settingsVisible === "no"
-				) {
+				if ( menu.menuVisible === "yes" && menu.musicVisible === "no" && menu.settingsVisible === "no"){
 					const angle = event.detail.angle;
 					if (angle >= 0 && angle <= 90) {
 						menu.optionsIndex = 0;
@@ -268,11 +255,7 @@ class App extends React.Component{
 					}
 				}
 				// Rotation in Music Menu
-				else if (
-					menu.menuVisible === "yes" &&
-					menu.musicVisible === "yes" &&
-					menu.settingsVisible === "no"
-				) {
+				else if ( menu.menuVisible === "yes" && menu.musicVisible === "yes" && menu.settingsVisible === "no"){
 					const angle = event.detail.angle;
 					if (angle >= 0 && angle <= 120) {
 						menu.musicIndex = 0;
@@ -290,11 +273,7 @@ class App extends React.Component{
 					}
 				}
 				// Rotation in Settings Menu
-				else if (
-					menu.menuVisible === "yes" &&
-					menu.musicVisible === "no" &&
-					menu.settingsVisible === "yes"
-				) {
+				else if ( menu.menuVisible === "yes" && menu.musicVisible === "no" && menu.settingsVisible === "yes") {
 					const angle = event.detail.angle;
 					if (angle >= 0 && angle <= 120) {
 						menu.settingsIndex = 0;
@@ -325,10 +304,7 @@ class App extends React.Component{
 
   // Gets called when we press the Play/Pause Button to Play-Pause the Song
 	play = (songsList) => {
-		if (
-			this.state.menu.pageRender === "yes" &&
-			this.state.screen.screenIndex === 7
-		) {
+		if ( this.state.menu.pageRender === "yes" && this.state.screen.screenIndex === 7){
 			const { songIndex } = songsList;
 			if (songsList.isPlaying) {
 				songsList.isPlaying = false;
@@ -344,10 +320,7 @@ class App extends React.Component{
 
   // Gets called when we Press the Next Button for the Next Song
 	nextSong = (songsList) => {
-		if (
-			this.state.menu.pageRender === "yes" &&
-			this.state.screen.screenIndex === 7
-		) {
+		if ( this.state.menu.pageRender === "yes" && this.state.screen.screenIndex === 7){
 			songsList.songs.map((song) => {
 				song.pause();
 				song.currentTime = 0;
@@ -368,10 +341,7 @@ class App extends React.Component{
 
   // Gets called when we Press the Previous Button for the Previous Song
 	prevSong = (songsList) => {
-		if (
-			this.state.menu.pageRender === "yes" &&
-			this.state.screen.screenIndex === 7
-		) {
+		if ( this.state.menu.pageRender === "yes" && this.state.screen.screenIndex === 7){
 			songsList.songs.map((song) => {
 				song.pause();
 				song.currentTime = 0;
@@ -392,10 +362,7 @@ class App extends React.Component{
 
   // Gets called to Update the Song Progress Bar
 	updateProgress = (event) => {
-		if (
-			this.state.menu.pageRender === "yes" &&
-			this.state.screen.screenIndex === 7
-		) {
+		if ( this.state.menu.pageRender === "yes" && this.state.screen.screenIndex === 7){
 			const { currentTime, duration } = event.srcElement;
 			const progressPercent = (currentTime / duration) * 100;
 			this.progressRef.current.style.width = progressPercent + "%";
